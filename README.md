@@ -22,8 +22,42 @@ This web application allows users to manage and manipulate data with functionali
 
 ## Steps necessary to run the software
 
-See instructions. Delete this line and place instructions to download, configure, and run the software here.
+### Prerequisites
+- Python 3.x
+- MongoDB
+- `pip` for managing Python packages
+
+
+1. **Clone the repository:**
+   ```bash
+   https://github.com/software-students-fall2024/2-web-app-lazyass.git
+   cd 2-web-app-lazyass
+
+
+
+
+2. **Create a virtual environment (recommended):**
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+
+3. **Install the required packages:**
+pip install -r requirements.txt
+
+
+4. **Create a .env file in the root directory with the following contents:**
+MONGO_URI=mongodb://yourusername:yourpassword@localhost:27017/yourdbname
+SECRET_KEY=your_secret_key
+
+Replace yourusername, yourpassword, and yourdbname with your actual MongoDB credentials.
+
+5. **Run the application:**
+python app.py
+
+
+6. **Open a web browser and navigate to:**
+http://127.0.0.1:5000/
+
 
 ## Task boards
-
-See instructions. Delete this line and place a link to the task boards here.
+（no team)

@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Web Application</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Web Application</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('view_data') }}">View Data</a></li>
+                <li><a href="{{ url_for('add_data') }}">Add Data</a></li>
+                <li><a href="{{ url_for('search_data') }}">Search Data</a></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>

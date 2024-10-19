@@ -1,0 +1,23 @@
+﻿<!-- templates/search_data.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Data</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h1>Search Data</h1>
+    <form action="{{ url_for('search_data') }}" method="POST">
+        <input type="text" name="search" placeholder="Enter search term" required>
+        <button type="submit">Search</button>
+    </form>
+    <ul>
+        {% for result in results %}
+        <li>{{ result['data'] }}</li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('home') }}">Back to Home</a>
+</body>
+</html>

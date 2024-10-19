@@ -1,0 +1,160 @@
+﻿/* static/css/styles.css */
+
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+    text-align: center;
+}
+
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Heading Styles */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+
+/* Navigation */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+/* Form Styles */
+form {
+    margin-bottom: 20px;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+
+input[type="text"], input[type="password"], input[type="email"] {
+    width: calc(100% - 20px);
+    padding: 8px 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+/* List Styles */
+ul {
+    padding-left: 0;
+}
+
+
+li {
+    background-color: #f9f9f9;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+li a {
+    color: #007bff;
+    margin: 0 5px;
+}
+
+
+li a:hover {
+    text-decoration: underline;
+}
+
+
+/* Form Buttons */
+form button {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+
+/* Flash Messages */
+.flash-message {
+    background-color: #e0ffe0;
+    border: 1px solid #b2ffb2;
+    color: #2d662d;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+
+/* Links */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+}
